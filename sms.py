@@ -18,7 +18,7 @@ def sms(exp, dest, msg):
     client = Client(account_sid, auth_token)
     
     try:
-        message = client.messages \
+        client.messages \
             .create(
                 from_=exp,
                 to=dest,
