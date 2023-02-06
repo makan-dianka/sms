@@ -13,17 +13,11 @@ logging.basicConfig(
 dotenv.load_dotenv(".env")
 
 def send(exp, dest, msg):
-    """
-    sms prend 3 str args
-    exp : numéro de l'expéditeur (twilio)
-    dest : numéro du destinateur, (twilio) si le compte vérifie tjr le num.
-    msg  : contenu du message
-    """
     account_sid = os.environ['ACCOUNT_SID']
     auth_token = os.environ['AUTH_TOKEN']
-    
+
     client = Client(account_sid, auth_token)
-    
+
     try:
         client.messages \
             .create(
