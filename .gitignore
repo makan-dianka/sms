@@ -1,5 +1,7 @@
 message.txt
 .env
 contact.log
-target.txt
+target.csv
+target_test.csv
+numbers.csv
 __pycache__
