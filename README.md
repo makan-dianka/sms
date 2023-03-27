@@ -51,7 +51,18 @@ créer un fichier ```message.txt``` et y mettre votre message
 
 ### csv file
 
-créer un fichier ```target.csv``` et y mettre les numéros de destination de votre message
+créer un fichier ```target.csv``` et y mettre les numéros de destination de votre message. Le contenu de fichier csv doit être comme ci-après :
+
+Ne remplace pas la première ligne "Country,Name,Number". Remplacer les autres lignes qui sont des numéros fictif
+```
+Country,Name,Number
+France,toto,+33754274418
+Italy,kiki,+393200412100
+Mali,titi,+22379215461
+.....
+.....
+.....
+```
 
 
 # ça y est, tout est prêt.
