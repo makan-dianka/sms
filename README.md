@@ -3,13 +3,13 @@
 Ce petit programme vous permet d'envoyer un message à n'import quel numéro depuis votre terminal. Avec ce programme, vous pouvez envoyer un message à un seul numéro ou à plusieurs numéros
 
 
-## Pre-requis
+### Pre-requis
 
 - Python version 3
 - Un numéro Twilio
 - Minimum connaissance en python
 
-## Installation 
+### Installation 
 
 ```git clone https://github.com/makan-dianka/sms.git```
 
@@ -26,7 +26,7 @@ pour activer l'environnement virtuelle taper :
 ```\venv\scripts\activate``` si vous êtes sur windows
 
 
-## Installations de dependances
+### Installations de dependances
 
 
 ```pip install --upgrade pip```
@@ -34,7 +34,7 @@ pour activer l'environnement virtuelle taper :
 
 ```pip install -r requirements.txt```
 
-## Fichier .env
+### .env
 
 créer un fichier ```.env``` et mettre les variables suivantes
 
@@ -65,7 +65,7 @@ Mali,titi,+22379215461
 ```
 
 
-# ça y est, tout est prêt.
+## ça y est, tout est prêt.
 
 executer le fichier ```send_sms.py``` pour envoyer votre message
 
