@@ -13,7 +13,8 @@ def message():
 def send_to_all():
     """envoyer un message à tous les numéro dans le fichier target.csv"""
 
-    target_path = f"{os.getcwd()}/target_test.csv"
+    # liste des numbers
+    target_path = f"{os.getcwd()}/target.csv"
 
     with open(target_path, newline='') as csv_file:
         targets = csv.DictReader(csv_file, delimiter=',')
