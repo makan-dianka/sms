@@ -12,11 +12,12 @@ logging.basicConfig(
 
 dotenv.load_dotenv(".env")
 
-def send(exp, dest, msg):
-    account_sid = os.environ['ACCOUNT_SID']
-    auth_token = os.environ['AUTH_TOKEN']
+account_sid = os.environ['ACCOUNT_SID']
+auth_token = os.environ['AUTH_TOKEN']
+client = Client(account_sid, auth_token)
 
-    client = Client(account_sid, auth_token)
+
+def send(dest, msg, exp=os.environ["NUMBER_1"]):
 
     try:
         client.messages \
@@ -28,5 +29,5 @@ def send(exp, dest, msg):
     except Exception as err:
         print(err)
     else:
-        print("\033[32mMessage envoyé.\033[00m")
+        print(f"\033[32mMessage envoyé à [{dest}]\033[00m")
         logging.info(f"Message envoyé à [{dest}]")
