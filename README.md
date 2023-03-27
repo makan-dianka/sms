@@ -1,6 +1,6 @@
 # Envoyer un simple sms
 
-Ce petit programme vous permet d'envoyer un message à n'import quel numéro depuis votre terminal. Avec ce programme, vous pouvez envoyer un message à un seul numéro ou à plusieurs numéros en même temps
+Ce petit programme vous permet d'envoyer un message à n'import quel numéro depuis votre terminal. Avec ce programme, vous pouvez envoyer un message à un seul numéro ou à plusieurs numéros
 
 
 ## Pre-requis
